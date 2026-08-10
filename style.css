@@ -1,26 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin:0;
     padding:0;
+    overflow-x: hidden;
+    text-decoration:none;
 }
 
 h1{
-    font-size:84px;
+    font-size:150px;
     text-align:center;
-    height:300px;
-    color:whitesmoke;
+    height:200px;
+    color: rgb(105, 50, 25);
+    font-family: "Archivo Black", sans-serif;
 }
 
 .hero-image{
-    background-image:url(20240626_104344.jpg);
-    height:300px;
-    margin:0;
+    background-image:url(20240626_102732.jpg);
+    height:200px;
     background-position:center;
     background-repeat: no-repeat;
     background-size:cover;
+    border-bottom:5px solid rgb(153, 72, 35);
 }
 
 .three-columns{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
-    width: 80%;
+    gap: 100px;
+    width: 70%;
+    padding:50px;
+    margin:auto;
+    align-items: center;
+}
+
+body{
+    background-color: burlywood;
+}
+
+img{
+    width: 300px;
+    height:400px;
+    object-fit:cover;
+    border-radius: 5px;
+    border:5px solid rgb(153, 72, 35);
+    margin-bottom: 10px;
+}
+
+button{
+    width:300px;
+    height:55px;
+    border-radius: 5px;
+    border: 5px solid rgb(153, 72, 35);
+    background-color:rgb(244, 215, 177);
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+    text-align:justify;
+    color:black;
+    width:300px;
+    margin-bottom: 10px;
+    font-family: "Libre Franklin", sans-serif;
 }
