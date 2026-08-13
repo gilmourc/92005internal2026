@@ -8,12 +8,45 @@
     text-decoration:none;
 }
 
+body{
+    background-color: rgb(222, 178, 124);
+}
+
+.header{
+    height:45px;
+    background-color:rgb(105, 50, 25);
+    overflow-y:hidden;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+ul{
+    list-style-type:none;
+    display:flex;
+}
+
+ul li a{
+    display:block;
+    color: burlywood;
+    padding:14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+ul li a:hover{
+    background-color:rgb(77, 37, 18) ;
+}
+
+ul li a.active{
+    background-color:rgb(48, 23, 11) ;
+}
+
 h1{
     font-size:150px;
     text-align:center;
     height:200px;
     color: rgb(105, 50, 25);
     font-family: "Archivo Black", sans-serif;
+    overflow-y:hidden;
 }
 
 .hero-image{
@@ -28,43 +61,90 @@ h1{
 .three-columns{
     display:grid;
     grid-template-columns:repeat(3, 1fr);
+    place-items:center;
     gap: 100px;
-    width: 70%;
-    padding:50px;
-    margin:auto;
+    width: 90%;
+    margin: auto;
     align-items: center;
-}
-
-body{
-    background-color: burlywood;
+    /*position:relative;
+    display:inline-block;*/
 }
 
 img{
-    width: 300px;
-    height:400px;
+    width: 98%;
+    height:500px;
     object-fit:cover;
     border-radius: 5px;
     border:5px solid rgb(153, 72, 35);
-    margin-bottom: 10px;
+    margin-bottom:10px;
+    object-fit:cover;
 }
 
-button{
-    width:300px;
-    height:55px;
-    border-radius: 5px;
-    border: 5px solid rgb(153, 72, 35);
-    background-color:rgb(244, 215, 177);
+.container{
+    position:relative;
+    width: 100%;
+    height: 100%;
 }
+
+.container .homepage{
+    background-color:black;
+}
+
+.container:hover{
+    opacity: 0.85;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container .button{
+    position:absolute;
+    top:50%;    
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0;
+}
+
+.container:hover .button{
+    opacity:1;
+    transition: 0.3s ease-in-out;
+}
+button{
+    width:150px;
+    height:75px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:none;
+    background-color: rgba(222, 178, 124, 0.694);
+}
+
+button:hover{
+    background-color:rgb(153, 72, 35);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
 
 h2{
     text-align: center;
+    margin: 15px 0;
+    font-family: "Libre Franklin", sans-serif;
+    color: rgb(105, 50, 25);
 }
 
 p{
     font-size: 18px;
-    text-align:justify;
+    text-align:center;
     color:black;
-    width:300px;
+    width:100%;
     margin-bottom: 10px;
     font-family: "Libre Franklin", sans-serif;
+}
+
+.four-column-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    gap:100px;
+    margin:auto;
+    padding:60px;
 }
